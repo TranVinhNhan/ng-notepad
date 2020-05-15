@@ -1,0 +1,15 @@
+.main-app {
+    padding-top: 15px;
+    max-width: 1368px;
+    margin: auto;
+    background-color: lightgray;
+}
+
+.textarea-app {
+    display: block;
+    width: 98%;
+    min-height: 100px;
+    margin: auto;
+    resize: none;
+    overflow: hidden;
+}
