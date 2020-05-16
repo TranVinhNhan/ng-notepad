@@ -1,7 +1,7 @@
 <div class="main-app">
     <div>
-        <textarea *ngIf="!isSaved" class="textarea-app" rows="4" cols="50">{{ savedContent }}</textarea>
+        <textarea [(ngModel)]="savedContent" *ngIf="!isSaved" class="textarea-app" rows="4" cols="50"></textarea>
         <p (click)="clickToEdit()" *ngIf="isSaved" class="textarea-app">{{ savedContent }}</p>
-        <button (click)="saveChanges()">Save</button>
+        <button class="button" (click)="saveChanges()">Save</button>
     </div>
 </div>
